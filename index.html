@@ -1,0 +1,13 @@
+﻿<!doctype html>
+<html lang="ru">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Beaver's Forest · Бобр и лиса</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<main class="game">
+<header><div class="brand"><span>🌿</span><div>BEAVER’S FOREST<small>Приключение с притяжательными местоимениями</small></div></div><div class="tools"><button id="sound" title="Включить или выключить звук" aria-label="Выключить звук">♫</button><button id="help" title="Правила">?</button><button id="home" title="В меню">⌂</button></div></header>
+<section class="board"><canvas id="scene" width="1536" height="1024" aria-label="Лесная тропинка с бобром, лисой и двенадцатью пеньками"></canvas><div class="hud"><span id="progress">🪵 0 / 12</span><span id="time">⏱ 0:00</span><span id="errors">Ошибки: 0 / 6</span></div><div class="chase"><span>🦊</span><div><i id="distance"></i></div><span>🦫</span></div><div id="board-note">12 пеньков. Один смелый бобр. Твоё лесное приключение!</div></section>
+<section class="task" aria-live="polite"><div class="task-label"><span id="task-count">ЛЕСНАЯ ШКОЛА</span><span id="feedback">Выбери слово и помоги бобру!</span></div><div class="sentences"><p id="russian">Готов отправиться в лес?</p><p id="english">Let’s play together!</p></div><div id="answers" class="answers"></div></section>
+<footer>Читай → выбирай слово → помогай бобру <span>Можно отвечать клавишами 1, 2, 3</span></footer>
+</main>
+<div id="overlay" class="overlay"><section id="dialog" class="dialog" role="dialog" aria-modal="true" aria-labelledby="dialog-title"></section></div>
+<script src="game.js"></script>
+</body></html>
